@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neumorphic Calculator | By Glenn Gonzaga</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+    <h1>Neumorphic Calculator</h1>
+    <p>Simple calculator with a neumorphic design.</p>
+  </header>
+
+  <main>
+    <section class="calculator">
+      <div class="display">
+        <input
+          type="text"
+          id="result"
+          placeholder="0"
+          readonly
+          aria-label="Calculator Display"
+        />
+      </div>
+
+      <button class="btn clear" onclick="clearDisplay()">AC</button>
+      <button class="btn backspace" onclick="deleteLast()">DEL</button>
+      <button class="btn operator" onclick="appendCharacter('%')">%</button>
+      <button class="btn operator" onclick="appendCharacter('/')">÷</button>
+      <button class="btn operator" onclick="appendCharacter('*')">×</button>
+
+      <button class="btn number" onclick="appendCharacter('7')">7</button>
+      <button class="btn number" onclick="appendCharacter('8')">8</button>
+      <button class="btn number" onclick="appendCharacter('9')">9</button>
+      <button class="btn operator" onclick="appendCharacter('-')">-</button>
+
+      <button class="btn number" onclick="appendCharacter('4')">4</button>
+      <button class="btn number" onclick="appendCharacter('5')">5</button>
+      <button class="btn number" onclick="appendCharacter('6')">6</button>
+      <button class="btn operator" onclick="appendCharacter('+')">+</button>
+
+      <button class="btn number" onclick="appendCharacter('1')">1</button>
+      <button class="btn number" onclick="appendCharacter('2')">2</button>
+      <button class="btn number" onclick="appendCharacter('3')">3</button>
+
+      <button class="btn decimal" onclick="appendCharacter('.')">.</button>
+      <button class="btn number" onclick="appendCharacter('0')">0</button>
+      <button class="btn equals" onclick="calculate()">=</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Designed &amp; Developed by Glenn Gonzaga</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
